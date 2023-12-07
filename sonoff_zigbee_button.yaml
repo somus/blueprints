@@ -4,13 +4,15 @@ blueprint:
     Press, Double Press, and Hold.
   domain: automation
   input:
-    button_id:
-      name: Button
-      description: The button to configure.
+    switch:
+      name: Tuya 1-Button Scene Switch
+      description: Sonoff SNZB-01P Scene Switch to use
       selector:
-        device:
-          manufacturer: eWeLink
-          model: SNZB-01P
+        entity:
+          integration: mqtt
+          domain:
+            - sensor
+          multiple: false
     press_action:
       name: Press Action
       description: Action to perform on Press.
