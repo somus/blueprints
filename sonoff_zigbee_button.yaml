@@ -10,7 +10,7 @@ blueprint:
       selector:
         device:
           manufacturer: eWeLink
-          model: WB01
+          model: SNZB-01P
     press_action:
       name: Press Action
       description: Action to perform on Press.
@@ -29,7 +29,7 @@ blueprint:
       default: []
       selector:
         action: {}
-  source_url: https://github.com/apollo1220/blueprints/blob/main/sonoff_zigbee_button.yaml
+  source_url: https://github.com/somus/blueprints/blob/main/sonoff_zigbee_button.yaml
 variables:
   button_id: !input 'button_id'
   press_action: !input 'press_action'
